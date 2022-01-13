@@ -1,0 +1,15 @@
+import 'package:app03meals/models/category.dart';
+import 'package:flutter/material.dart';
+
+class CategoryItem extends StatelessWidget {
+  final Category category;
+
+  const CategoryItem(this.category, {Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Text(category.title),
+    );
+  }
+}
